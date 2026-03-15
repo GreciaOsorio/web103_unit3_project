@@ -1,11 +1,27 @@
 import React, { useState, useEffect } from 'react'
 import Event from '../components/Event'
 import '../css/LocationEvents.css'
+import { useParams } from 'react-router-dom'
+import locationsAPI from '../services/api.js'
 
 const LocationEvents = ({index}) => {
-    const [location, setLocation] = useState([])
-    const [events, setEvents] = useState([])
+    const { location } = useParams()
 
+    const [locationEvents, setLocationEvents] = useState([])
+
+    useEffect(() => {
+        (async () => {
+            try {
+                const locationEvents = await locationsAPI.fetchEventsByLocation(location)
+                setLocationEvents(locationEvents)
+            } catch (error) {
+                throw error
+            }
+        }) ()
+    }, [])
+    
+    
+    
     return (
         <div className='location-events'>
             <header>

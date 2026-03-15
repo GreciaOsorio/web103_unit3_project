@@ -1,23 +1,11 @@
-import React, { useEffect } from 'react'
 import { useRoutes, Link } from 'react-router-dom'
 import Locations from './pages/Locations'
 import LocationEvents from './pages/LocationEvents'
-import Events from './pages/Events'
+import Events from './pages/EventDetails'
 import PageNotFound from './pages/PageNotFound'
 import './App.css'
 
 const App = () => {
-  const [events, setEvents] = useState([]);
-
-  useEffect(() => {
-    const fetchEvents = async () => {
-      const response = await fetch('/events');
-      const data = await response.json()
-      setEvents(json)
-    }
-
-    fetchEvents()
-  }, [])
 
   let element = useRoutes([
     {
@@ -25,24 +13,12 @@ const App = () => {
       element: <Locations />
     },
     {
-      path: '/echolounge',
-      element: <LocationEvents index={1} />
+      path: 'location/:location',
+      element: <LocationEvents />
     },
     {
-      path: '/houseofblues',
-      element: <LocationEvents index={2} />
-    },
-    {
-      path: '/pavilion',
-      element: <LocationEvents index={3} />
-    },
-    {
-      path: '/americanairlines',
-      element: <LocationEvents index={4} />
-    },
-    {
-      path: '/events',
-      element: <Events />
+      path: '/event/:id',
+      element: <EventDetails />
     },
     {
       path: '/*',
@@ -54,7 +30,7 @@ const App = () => {
     <div className='app'>
 
       <header className='main-header'>
-        <h1>UnityGrid Plaza</h1>
+        <h1>Running for the RGV</h1>
 
         <div className='header-buttons'>
           <Link to='/' role='button'>Home</Link>

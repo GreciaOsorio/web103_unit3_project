@@ -1,10 +1,10 @@
-# WEB103 Project 3 - *Name of App Here*
+# WEB103 Project 3 - *Running for the RGV*
 
 Submitted by: **Grecia Osorio**
 
-About this web app: **App description here**
+About this web app: **Find running events all across the lower RGV. There is a selection of events from Brownsville, Harlingen, and Edinburg. Check out the dates and times, if you are interested follow the Sign Up button to be part of the events.**
 
-Time spent: **X** hours
+Time spent: **6** hours
 
 ## Required Features
 
@@ -13,7 +13,7 @@ The following **required** functionality is completed:
 <!-- Make sure to check off completed functionality below -->
 
 - [ ] **The web app uses React to display data from the API**
-- [ ] **The web app is connected to a PostgreSQL database, with an appropriately structured Events table**
+- [x] **The web app is connected to a PostgreSQL database, with an appropriately structured Events table**
   - [ ]  **NOTE: Your walkthrough added to the README must include a view of your Render dashboard demonstrating that your Postgres database is available**
   - [ ]  **NOTE: Your walkthrough added to the README must include a demonstration of your table contents. Use the psql command 'SELECT * FROM tablename;' to display your table contents.**
 - [ ] **The web app displays a title.**
