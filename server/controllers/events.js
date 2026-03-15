@@ -17,7 +17,7 @@ const getEventById = async (req, res) => {
             FROM events
             WHERE id = $1
         `
-        const eventId = req.params.id
+        const eventId = req.params.eventId
 
         const results = await pool.query(selectQuery, [eventId])
         res.status(200).json(results.rows[0])

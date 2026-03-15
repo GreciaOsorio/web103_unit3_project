@@ -38,7 +38,7 @@ const Locations = () => {
                         return (
                             <Link
                                 key={loc.location}
-                                to={`/location/${loc.location}`}
+                                to={`/locations/${loc.location}`}
                                 className='ribbon-card'
                                 style={{ background: theme.gradient }}
                             >

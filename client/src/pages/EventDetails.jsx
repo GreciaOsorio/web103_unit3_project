@@ -1,12 +1,12 @@
 import React, {useState, useEffect} from 'react';
-import '../css/Event.css'
+import '../css/EventDetails.css'
 import { useParams } from 'react-router-dom';
 import locationsAPI from '../services/api.js'
 
-const EventDetails = ({data}) => {
+const EventDetails = () => {
 
     const { id } = useParams()
-    const [event, setEvent] = useState({id: 0, image: "", name: "", organizer: "", date: "", time: "", location: "", address: "", description: "", signUp: ""})
+    const [event, setEvent] = useState({id: 0, image: "", name: "", organizer: "", date: "", time: "", location: "", address: "", description: "", signup: ""})
 
 
     useEffect(() => {
@@ -32,7 +32,7 @@ const EventDetails = ({data}) => {
                     <p id="time">{'Time: ' + event.time}</p>
                     <p id="address">{'Address: ' + event.address}</p>
                     <p id="description">{event.description}</p>
-                    <p id="signUp"><a href={event.signUp}> Sign Up!</a></p>
+                    <p id="signUp"><a href={event.signup}> Sign Up!</a></p>
 
                 </div>
             </main>

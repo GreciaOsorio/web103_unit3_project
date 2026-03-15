@@ -16,7 +16,7 @@ header {
 .main-header {
     height: 30vh;
     width: 85vw;
-    align-items: flex-end;
+    align-items: flex-start;
     position: relative;
     z-index: 1;
 }

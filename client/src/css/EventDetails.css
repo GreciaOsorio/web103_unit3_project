@@ -1,0 +1,19 @@
+/* Detail Page CSS*/
+
+.event-info {
+    display: flex;
+    flex-direction: row;
+}
+
+.image-container {
+    padding-left: 100px;
+    width: 40vw;
+}
+
+.image-container img {
+    width: 80%;
+}
+
+.event-details {
+    width: 45vw;
+}

@@ -13,7 +13,7 @@ const App = () => {
       element: <Locations />
     },
     {
-      path: 'locations/:location',
+      path: '/locations/:location',
       element: <LocationEvents />
     },
     {

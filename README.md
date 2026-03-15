@@ -4,7 +4,7 @@ Submitted by: **Grecia Osorio**
 
 About this web app: **Find running events all across the lower RGV. There is a selection of events from Brownsville, Harlingen, and Edinburg. Check out the dates and times, if you are interested follow the Sign Up button to be part of the events.**
 
-Time spent: **10** hours
+Time spent: **16** hours
 
 ## Required Features
 
@@ -19,8 +19,8 @@ The following **required** functionality is completed:
 - [x] **The web app displays a title.**
 - [x] **Website includes a visual interface that allows users to select a location they would like to view.**
   - [ ] *Note: A non-visual list of links to different locations is insufficient.* 
-- [ ] **Each location has a detail page with its own unique URL.**
-- [ ] **Clicking on a location navigates to its corresponding detail page and displays list of all events from the `events` table associated with that location.**
+- [x] **Each location has a detail page with its own unique URL.**
+- [x] **Clicking on a location navigates to its corresponding detail page and displays list of all events from the `events` table associated with that location.**
 
 The following **optional** features are implemented:
 
