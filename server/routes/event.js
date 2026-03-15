@@ -7,4 +7,8 @@ router.get('/', EventController.getEvents)
 
 router.get('/:eventId', EventController.getEventById)
 
+router.get('/location/:location', EventController.getEventByLocation)
+
+router.get('/locations', EventController.getUniqueLocations)
+
 export default router

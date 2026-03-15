@@ -27,7 +27,7 @@ else if (process.env.NODE_ENV === 'production') {
 }
 
 // specify the api path for the server to use
-app.use('/events', eventsRouter)
+app.use('/api', eventsRouter)
 
 
 if (process.env.NODE_ENV === 'production') {

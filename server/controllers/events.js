@@ -53,5 +53,6 @@ const getUniqueLocations = async (req, res) => {
 export default {
     getEvents,
     getEventById,
-    getEventByLocation
+    getEventByLocation,
+    getUniqueLocations
 }
