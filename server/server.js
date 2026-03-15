@@ -2,9 +2,10 @@ import express from 'express'
 import path from 'path'
 import favicon from 'serve-favicon'
 import dotenv from 'dotenv'
-
+import cors from 'cors'
 // import the router from your routes file
-
+import './config/dotenv.js'
+import eventsRouter from './routes/event.js'
 
 dotenv.config()
 
@@ -12,7 +13,10 @@ const PORT = process.env.PORT || 3000
 
 const app = express()
 
+app.use(cors())
+
 app.use(express.json())
+
 
 if (process.env.NODE_ENV === 'development') {
     app.use(favicon(path.resolve('../', 'client', 'public', 'party.png')))
@@ -23,6 +27,7 @@ else if (process.env.NODE_ENV === 'production') {
 }
 
 // specify the api path for the server to use
+app.use('/events', eventsRouter)
 
 
 if (process.env.NODE_ENV === 'production') {
@@ -32,5 +37,5 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 app.listen(PORT, () => {
-    console.log(`server listening on http://localhost:${PORT}`)
+    console.log(`🚀 server listening on http://localhost:${PORT}`)
 })

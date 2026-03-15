@@ -1,11 +1,24 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useRoutes, Link } from 'react-router-dom'
 import Locations from './pages/Locations'
 import LocationEvents from './pages/LocationEvents'
 import Events from './pages/Events'
+import PageNotFound from './pages/PageNotFound'
 import './App.css'
 
 const App = () => {
+  const [events, setEvents] = useState([]);
+
+  useEffect(() => {
+    const fetchEvents = async () => {
+      const response = await fetch('/events');
+      const data = await response.json()
+      setEvents(json)
+    }
+
+    fetchEvents()
+  }, [])
+
   let element = useRoutes([
     {
       path: '/',
@@ -30,6 +43,10 @@ const App = () => {
     {
       path: '/events',
       element: <Events />
+    },
+    {
+      path: '/*',
+      element: < PageNotFound />
     }
   ])
 
