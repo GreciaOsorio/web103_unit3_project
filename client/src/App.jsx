@@ -13,7 +13,7 @@ const App = () => {
       element: <Locations />
     },
     {
-      path: 'location/:location',
+      path: 'locations/:location',
       element: <LocationEvents />
     },
     {
@@ -34,7 +34,6 @@ const App = () => {
 
         <div className='header-buttons'>
           <Link to='/' role='button'>Home</Link>
-          <Link to='/events' role='button'>Events</Link>
         </div>
       </header>
 

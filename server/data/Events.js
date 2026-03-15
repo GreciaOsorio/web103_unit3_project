@@ -6,7 +6,7 @@ const eventData = [
         "organizer": "City Cruisers Cycling Group",
         "date": "Saturday, April 4, 2026",
         "time": "7:00 AM CDT",
-        "location": "Borwnsville",
+        "location": "Brownsville",
         "address": "Sunrise Mall, 2370 Frontage Rd, Brownsville, TX",
         "description": "Our non-profit organization is dedicated to creating meaningful events that unite our community in support of our causes, with the funds raised being utilized to assist local organizations.",
         "signUp": "https://locationcruiserscyclingfriends.redpodium.com/2026-community-autism-awareness-run",
@@ -49,7 +49,7 @@ const eventData = [
     },
     {
         "id": 5,
-        "image": "",
+        "image": "https://d368g9lw5ileu7.cloudfront.net/races/race140950-social382x200.bL-ZAC.jpg",
         "name": "42nd Annual Causeway Run and Walk",
         "organizer": "Port Isabel Chamber of Commerce ",
         "date": "Saturday, April 11, 2026",

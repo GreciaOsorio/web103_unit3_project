@@ -1,4 +1,4 @@
-const API_BASE_URL = '/api/events'; // Base URL for events API
+const API_BASE_URL = '/api'; // Base URL for events API
 
 // Fetch all events
 export const fetchEvents = async () => {
@@ -33,7 +33,7 @@ export const fetchEventById = async (id) => {
 // Fetch events by location (city)
 export const fetchEventsByLocation = async (location) => {
     try {
-        const response = await fetch(`${API_BASE_URL}/location/${location}`);
+        const response = await fetch(`${API_BASE_URL}/locations/${location}`);
         if (!response.ok) {
             throw new Error('Failed to fetch events by location');
         }
