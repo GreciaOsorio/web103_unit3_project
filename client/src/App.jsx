@@ -1,8 +1,8 @@
 import { useRoutes, Link } from 'react-router-dom'
 import Locations from './pages/Locations'
-import LocationEvents from './pages/LocationEvents'
-import Events from './pages/EventDetails'
-import PageNotFound from './pages/PageNotFound'
+import LocationEvents from './pages/LocationEvents.jsx'
+import EventDetails from './pages/EventDetails.jsx'
+import PageNotFound from './pages/PageNotFound.jsx'
 import './App.css'
 
 const App = () => {
@@ -22,7 +22,7 @@ const App = () => {
     },
     {
       path: '/*',
-      element: < PageNotFound />
+      element: <PageNotFound />
     }
   ])
 

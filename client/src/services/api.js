@@ -1,4 +1,4 @@
-const API_BASE_URL = '/events'; // Base URL for events API
+const API_BASE_URL = '/api/events'; // Base URL for events API
 
 // Fetch all events
 export const fetchEvents = async () => {
@@ -59,3 +59,10 @@ export const fetchUniqueLocations = async () => {
         throw error;
     }
 };
+
+export default {
+    fetchEvents,
+    fetchEventById,
+    fetchEventsByLocation,
+    fetchUniqueLocations
+}

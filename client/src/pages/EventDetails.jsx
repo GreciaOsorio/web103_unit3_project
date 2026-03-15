@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import '../css/Event.css'
 import { useParams } from 'react-router-dom';
+import locationsAPI from '../services/api.js'
 
 const EventDetails = ({data}) => {
 
@@ -10,13 +11,12 @@ const EventDetails = ({data}) => {
 
     useEffect(() => {
         const fetchEventById = async () => {
-            const response = await fetch(`/events/${id}`)
-            const data = await response.json()
+            const data = await locationsAPI.fetchEventById(id)
             setEvent(data)
         }       
 
         fetchEventById()
-    }, [data,id]);
+    }, [id]);
 
 
     return (
@@ -30,7 +30,7 @@ const EventDetails = ({data}) => {
                     <p id="organizer">{'Organized By: ' + event.organizer}</p>
                     <p id="date">{'Date: ' + event.date}</p>
                     <p id="time">{'Time: ' + event.time}</p>
-                    <p id="address">{event.address}</p>
+                    <p id="address">{'Address: ' + event.address}</p>
                     <p id="description">{event.description}</p>
                     <p id="signUp"><a href={event.signUp}> Sign Up!</a></p>
 

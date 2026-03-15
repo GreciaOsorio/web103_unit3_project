@@ -4,49 +4,45 @@ import '../css/LocationEvents.css'
 import { useParams } from 'react-router-dom'
 import locationsAPI from '../services/api.js'
 
-const LocationEvents = ({index}) => {
-    const { location } = useParams()
+const LocationEvents = () => {
+    const { location } = useParams();
 
-    const [locationEvents, setLocationEvents] = useState([])
+    const [locationEvents, setLocationEvents] = useState([]);
 
     useEffect(() => {
         (async () => {
             try {
-                const locationEvents = await locationsAPI.fetchEventsByLocation(location)
-                setLocationEvents(locationEvents)
+                const events = await locationsAPI.fetchEventsByLocation(location)
+                setLocationEvents(events)
             } catch (error) {
-                throw error
+                console.log('Error fetching location events: ', error)
             }
         }) ()
-    }, [])
+    }, [location])
     
     
     
     return (
         <div className='location-events'>
             <header>
-                <div className='location-image'>
-                    <img src={location.image} />
-                </div>
-
                 <div className='location-info'>
-                    <h2>{location.name}</h2>
-                    <p>{location.address}, {location.city}, {location.state} {location.zip}</p>
+                    <h2>{location}</h2>
                 </div>
             </header>
 
             <main>
-                {
-                    events && events.length > 0 ? events.map((event, index) =>
+                {locationEvents && locationEvents.length > 0
+                    ? locationEvents.map((event) =>
                         <Event
                             key={event.id}
                             id={event.id}
-                            title={event.title}
+                            title={event.name}
                             date={event.date}
                             time={event.time}
                             image={event.image}
                         />
-                    ) : <h2><i className="fa-regular fa-calendar-xmark fa-shake"></i> {'No events scheduled at this location yet!'}</h2>
+                    )
+                    : <h2><i className="fa-regular fa-calendar-xmark fa-shake"></i> {'No events scheduled at this location yet!'}</h2>
                 }
             </main>
         </div>

@@ -5,10 +5,10 @@ const router = express.Router()
 
 router.get('/', EventController.getEvents)
 
-router.get('/:eventId', EventController.getEventById)
-
-router.get('/location/:location', EventController.getEventByLocation)
-
 router.get('/locations', EventController.getUniqueLocations)
+
+router.get('/locations/:location', EventController.getEventByLocation)
+
+router.get('/:eventId', EventController.getEventById)
 
 export default router

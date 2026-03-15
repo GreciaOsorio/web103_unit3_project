@@ -17,7 +17,7 @@ const getEventById = async (req, res) => {
             FROM events
             WHERE id = $1
         `
-        const eventId = req.params.eventId
+        const eventId = req.params.id
 
         const results = await pool.query(selectQuery, [eventId])
         res.status(200).json(results.rows[0])
@@ -32,10 +32,10 @@ const getEventByLocation = async(req, res) => {
         const selectQuery = `
             SELECT * FROM events WHERE location = $1 ORDER BY id ASC
         `
-        const eventLocation = req.params.eventLocation
+        const eventLocation = req.params.location
 
         const results = await pool.query(selectQuery, [eventLocation])
-        res.status(200).json(results.rows[0])
+        res.status(200).json(results.rows)
     } catch(error) {
         res.status(400).json( { error: error.message } )
     }
