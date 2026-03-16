@@ -37,3 +37,7 @@
 .location-events main i {
     margin-right: 10px;
 }
+
+.location-info h2 {
+    font-size: 3em !important;
+}

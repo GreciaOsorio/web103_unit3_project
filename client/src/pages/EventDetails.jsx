@@ -27,12 +27,13 @@ const EventDetails = () => {
                 </div>
                 <div class="event-details">
                     <h2 id="name">{event.name}</h2>
+                    <hr width="100%" size="2"></hr>
                     <p id="organizer">{'Organized By: ' + event.organizer}</p>
                     <p id="date">{'Date: ' + event.date}</p>
                     <p id="time">{'Time: ' + event.time}</p>
                     <p id="address">{'Address: ' + event.address}</p>
                     <p id="description">{event.description}</p>
-                    <p id="signUp"><a href={event.signup}> Sign Up!</a></p>
+                    <p id="signUp" className='signup-button' role='button'><a href={event.signup}> Sign Up!</a></p>
 
                 </div>
             </main>

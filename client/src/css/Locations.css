@@ -6,7 +6,7 @@
 }
 
 .locations-heading {
-    margin-bottom: 30px;
+    margin-bottom: 30px !important;
     text-align: center;
 }
 

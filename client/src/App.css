@@ -14,20 +14,23 @@ header {
 }
 
 .main-header {
-    height: 30vh;
-    width: 85vw;
-    align-items: flex-start;
-    position: relative;
-    z-index: 1;
+    height: auto;
+    width: 100%;
+    padding: 35px 50px;
+    align-items: center;
 }
 
 .header-buttons {
-    width: 30%;
+    width: auto;
     display: flex;
-    justify-content: space-around;
+    gap: 12px
 }
 
 .header-buttons button {
     margin-right: 20px;
     margin-left: 20px;
+}
+
+hr {
+    padding-bottom: 10px;
 }

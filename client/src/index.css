@@ -22,6 +22,7 @@
     --h1-color: white;
     --h2-color: white;
     --h3-color: white;
+    --a-color: white;
     --card-background-color: none;
     --form-element-background-color: white;
     --form-element-border-color: var(--main-color);
@@ -63,11 +64,12 @@
 #root [role=button] {
     text-transform: uppercase;
     font-weight: 900;
-    font-size: 1.5em;
-    border: 2px solid white;
+    font-size: 0.85em;
+    border: 1px solid white;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 6px 16px
 }
 
 #root article {
@@ -76,4 +78,9 @@
 
 #root select {
     width: 400px;
+}
+
+a{
+    color:white;
+    text-decoration: none;
 }

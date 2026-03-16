@@ -3,6 +3,7 @@ import Locations from './pages/Locations'
 import LocationEvents from './pages/LocationEvents.jsx'
 import EventDetails from './pages/EventDetails.jsx'
 import PageNotFound from './pages/PageNotFound.jsx'
+import AllEvents from './pages/AllEvents.jsx'
 import './App.css'
 
 const App = () => {
@@ -21,6 +22,10 @@ const App = () => {
       element: <EventDetails />
     },
     {
+      path: '/events',
+      element: <AllEvents />
+    },
+    {
       path: '/*',
       element: <PageNotFound />
     }
@@ -34,6 +39,7 @@ const App = () => {
 
         <div className='header-buttons'>
           <Link to='/' role='button'>Home</Link>
+          <Link to='/events' role='button'>All Events</Link>
         </div>
       </header>
 
