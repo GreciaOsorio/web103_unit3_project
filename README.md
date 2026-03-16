@@ -42,6 +42,7 @@ Here's a walkthrough of implemented required features:
 Here is the link to the GIF:
 <a href="//imgur.com/a/m68M5K4">Running RGV (2)</a>
 
+<img src="https://imgur.com/gallery/running-rgv-2-m68M5K4"/> 
 
 
 <!-- Replace this with whatever GIF tool you used! -->
