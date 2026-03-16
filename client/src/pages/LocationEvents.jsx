@@ -3,6 +3,7 @@ import Event from '../components/Event'
 import '../css/LocationEvents.css'
 import { useParams } from 'react-router-dom'
 import locationsAPI from '../services/api.js'
+import { Link } from 'react-router-dom'
 
 const LocationEvents = () => {
     const { location } = useParams();
@@ -25,8 +26,9 @@ const LocationEvents = () => {
     return (
         <div className='location-events'>
             <header>
+                <Link to='/' className='back'>🡨  Back</Link>
                 <div className='location-info'>
-                    <h2>{location}</h2>
+                    <h2>🌇 {location}</h2>
                 </div>
             </header>
 

@@ -33,3 +33,41 @@
     font-weight: 600;
     
 }
+
+/* countdown to event */
+
+.countdown {
+    margin-top: 20px;
+}
+
+.countdown h3 {
+    margin-bottom: 10px;
+}
+
+.countdown-boxes {
+    display: flex;
+    flex-direction: row;  
+    gap: 8px;
+}
+
+.countdown-box {
+    background-color: var(--main-color);
+    border-radius: 6px;
+    padding: 6px 10px;     
+    text-align: center;
+    min-width: 50px;       
+}
+
+.countdown-box span {
+    font-size: 1.1em;      
+    font-weight: 900;
+    color: white;
+}
+
+.countdown-box p {
+    font-size: 0.65em;     
+    color: rgba(255, 255, 255, 0.75);
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}

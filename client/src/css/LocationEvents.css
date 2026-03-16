@@ -7,7 +7,7 @@
 
 .location-events header {
     background-color: var(--main-color);
-    display: grid;
+    display: table-column;
     grid-template-columns: 1fr 2fr;
     column-gap: 10px;
 }
@@ -40,4 +40,15 @@
 
 .location-info h2 {
     font-size: 3em !important;
+}
+
+.location-filter {
+    display: flex;
+    align-items: center;
+    padding-right: 40px;
+    justify-content: flex-end;
+}
+
+.back {
+    margin-bottom: 15px !important;
 }
