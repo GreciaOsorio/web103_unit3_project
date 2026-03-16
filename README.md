@@ -18,7 +18,7 @@ The following **required** functionality is completed:
   - [ ]  **NOTE: Your walkthrough added to the README must include a demonstration of your table contents. Use the psql command 'SELECT * FROM tablename;' to display your table contents.**
 - [x] **The web app displays a title.**
 - [x] **Website includes a visual interface that allows users to select a location they would like to view.**
-  - [ ] *Note: A non-visual list of links to different locations is insufficient.* 
+  - [x] *Note: A non-visual list of links to different locations is insufficient.* 
 - [x] **Each location has a detail page with its own unique URL.**
 - [x] **Clicking on a location navigates to its corresponding detail page and displays list of all events from the `events` table associated with that location.**
 
@@ -26,7 +26,7 @@ The following **optional** features are implemented:
 
 - [x] An additional page shows all possible events
   - [x] Users can sort *or* filter events by location.
-- [ ] Events display a countdown showing the time remaining before that event
+- [x] Events display a countdown showing the time remaining before that event
   - [x] Events appear with different formatting when the event has passed (ex. negative time, indication the event has passed, crossed out, etc.).
 
 The following **additional** features are implemented:
