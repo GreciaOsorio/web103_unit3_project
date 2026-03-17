@@ -39,8 +39,9 @@ Here's a walkthrough of implemented required features:
 
 **Video will not display as a clip here no matter what I do 😭**
 
-Here is the link to the GIF:
-<a href="//imgur.com/a/m68M5K4">Running RGV (2)</a>
+Here is the link to the GIF: Updated GIF as of 3/16/2026
+
+<a href="//imgur.com/a/0vqZaTe">Running for the RGV (2nd attempt)</a>
 
 <img src="https://imgur.com/gallery/running-rgv-2-m68M5K4"/> 
 
